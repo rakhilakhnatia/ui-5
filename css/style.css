@@ -1,0 +1,343 @@
+/*====================== Google fonts =================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: #fafafa;
+  margin: 0;
+  line-height: 1.5;
+}
+
+p {
+  color: #86869c;
+}
+
+h1,
+h2,
+h3 {
+  color: #28283e;
+}
+
+/*========= CSS for mobile view ==============*/
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+}
+
+.hero-image {
+  display: flex;
+  margin-top: 50px;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.hero-desktop-section {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-heading {
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 1.1;
+
+}
+
+.hero-para {
+  width: 80%;
+  line-height: 1.6em;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+button {
+  display: block;
+  /* text-align: center; */
+}
+
+.line {
+  height: 5.25em;
+  width: 0.0625rem;
+  margin: 0 auto;
+  background: rgba(134, 134, 156, 0.25);
+}
+
+.no1 {
+  margin-bottom: 4rem;
+}
+
+.no1,
+.no2 {
+  text-align: center;
+  font-weight: 900;
+  border: 0.0625rem solid rgba(134, 134, 156, 0.25);
+  display: inline-block;
+  padding: 1rem 1.2rem;
+  border-radius: 50%;
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.line-section {
+  text-align: center;
+}
+
+.main-section {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hero-buttons {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-image {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.grid-image img {
+  width: 40%;
+  border-radius: 10px;
+  margin: 8px;
+}
+
+.main-text {
+  text-align: center;
+}
+
+.main-heading {
+  font-size: 1.2rem;
+  color: #4d96a8;
+}
+
+footer {
+  position: relative;
+  color: #fafafa;
+  text-align: center;
+  background-image: url(../images/Copy\ of\ image-footer.jpg);
+  background-size: cover;
+  padding: 0 1.5rem;
+  font-size: 1.125rem;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(77, 150, 168, 0.9);
+}
+
+footer .line {
+  transform: translate(-7.5rem);
+}
+
+
+.no2 {
+  background: #fafafa;
+  color: #86869c;
+  padding: 1rem 1rem;
+  -webkit-transform: translateY(-7.5rem);
+  transform: translateY(-7.5rem);
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-heading {
+  margin-top: -59px;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.footer-para {
+  margin-top: 16px;
+  color: #fff;
+}
+
+.footer-section{
+  padding: 85px 20px 0;
+}
+
+.footer-button {
+  font-size: 1.125rem;
+  font-weight: 900;
+  line-height: 1.625rem;
+  color: #fafafa;
+  transition: 0.2s ease-in-out;
+  padding: 1rem 0;
+  border-radius: 1.812rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  background: #845eb0;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 12.06rem;
+  text-align: center;
+}
+
+span {
+  color: #d9b8ff;
+}
+
+.download {
+  font-size: 1.125rem;
+  font-weight: 900;
+  line-height: 1.625rem;
+  color: #fafafa;
+  transition: 0.2s ease-in-out;
+  padding: 1rem 0;
+  border-radius: 1.812rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  background-color: #4d96a8;
+  width: 12.06rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.whatisit {
+  font-size: 1.125rem;
+  font-weight: 900;
+  line-height: 1.625rem;
+  color: #fafafa;
+  transition: 0.2s ease-in-out;
+  padding: 1rem 0;
+  border-radius: 1.812rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  background: #845eb0;
+  width: 8.687rem;
+
+  display: block;
+  margin: 0 auto;
+}
+
+
+/*========= CSS for desktop view ==============*/
+
+@media (min-width: 900px) {
+
+  .main-section{
+    margin-bottom: 45px;
+  }
+  .hero-image {
+    display: none;
+  }
+
+  .hero-desktop-section {
+    display: flex;
+  }
+
+  .hero-left {
+    width: 30%;
+  }
+
+  .hero-text {
+    width: 40%;
+  }
+
+  .hero-right {
+    width: 30%;
+  }
+
+  .hero-heading{
+    font-size: 3rem;
+  }
+
+  .hero-mobile-text {
+    display: none;
+  }
+
+
+  .grid-image {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .grid-image img {
+    width: 20%;
+  }
+
+  .main-para {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .footer-text {
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+
+  }
+
+  footer {
+    background-image: url("../images/Copy\ of\ image-footer2.jpg");
+    background-position: center;
+    margin-top: 10px;
+  }
+
+  .footer-section{
+    padding: 90px 0 45px 0;
+  }
+
+  .footer-heading {
+    width: 25%;
+    margin-top: -70px;
+    color: #fff;
+  }
+
+  .footer-para {
+    width: 30%;
+    margin-top: -70px;
+  }
+
+  .footer-button {
+    width: 20%;
+    margin-top: -70px;
+  }
+}
